@@ -1,1 +1,1 @@
-# Vikings - EthWarsaw Hackathon repository
+# Vikings team - EthWarsaw Hackathon repository
