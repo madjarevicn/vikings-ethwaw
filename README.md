@@ -1,0 +1,1 @@
+# Vikings - EthWarsaw Hackathon repository
