@@ -1,0 +1,25 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+
+import { Stats } from "./Stats";
+
+<Meta title="Molecules/Stats" component={Stats} />
+
+# Stats
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl
+eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc
+euismod.
+
+## Props
+
+<Props story="." />
+
+## Examples
+
+export const StatsTemplate = (args) => <Stats {...args} />;
+
+<Preview>
+	<Story name="Primary" argTypes={{}} args={{}}>
+		{StatsTemplate.bind({})}
+	</Story>
+</Preview>

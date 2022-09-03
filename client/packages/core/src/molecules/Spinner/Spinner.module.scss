@@ -1,0 +1,16 @@
+@import "@acme/sass/foundation";
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.Spinner {
+	display: inline-flex;
+	animation: spinner 1.5s linear infinite;
+}

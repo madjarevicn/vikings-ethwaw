@@ -1,0 +1,46 @@
+@import "@acme/sass/foundation";
+
+.Icon {
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+
+	// > * {
+	// }
+
+	// Size properties
+
+	&--SizeSmall {
+		width: $s--4;
+		height: $s--4;
+	}
+
+	&--SizeMedium {
+		width: $s--5;
+		height: $s--5;
+	}
+
+	&--SizeLarge {
+		width: $s--6;
+		height: $s--6;
+	}
+
+	// Color properties
+
+	&__Shape {
+		transition: stroke 0.2s ease;
+
+		&--ColorMainTextColor {
+			stroke: $color--main-text-color;
+		}
+
+		&--ColorGradient {
+			stroke: url("#svgGradient");
+		}
+
+		&--ColorWhite {
+			stroke: $color--white;
+		}
+	}
+}

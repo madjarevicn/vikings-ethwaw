@@ -1,0 +1,25 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+
+import { TemplateName } from "./TemplateName";
+
+<Meta title="Molecules/TemplateName" component={TemplateName} />
+
+# TemplateName
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl
+eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc
+euismod.
+
+## Props
+
+<Props story="." />
+
+## Examples
+
+export const TemplateNameTemplate = (args) => <TemplateName {...args} />;
+
+<Preview>
+	<Story name="Primary" argTypes={{}} args={{}}>
+		{TemplateNameTemplate.bind({})}
+	</Story>
+</Preview>

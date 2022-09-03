@@ -1,0 +1,1 @@
+export { getShapesByType } from "./getShapesByType";

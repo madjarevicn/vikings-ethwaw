@@ -1,0 +1,100 @@
+@use "./color-palette";
+@use "./box-shadow-palette";
+@use "sass:color";
+
+[data-theme] {
+	@extend .Theme--ColorPalette;
+	@extend .Theme--BoxShadowPalette;
+
+	&[data-theme="VIKINGS_LIGHT"] {
+		// App
+		--color-window-background: var(--white);
+		--color-main-text-color: var(--gray-900);
+		--color-white: var(--white);
+		--color-overlay: var(--gray-200);
+		--color-skeleton: var(--gray-200);
+
+		// Heading
+		--color-heading-section: var(--gray-900);
+		--color-heading-page: var(--white);
+		--color-heading-two-layered-black: var(--gray-900);
+		--color-heading-two-layered-white: var(--white);
+
+		// Label
+		--color-label-primary: var(--red-primary);
+		--color-label-white: var(--white);
+		--color-label-black: var(--gray-900);
+		--color-label-disabled: var(--gray-400);
+
+		// Gradient
+		--color-primary-gradient-red: var(--red-primary);
+		--color-primary-gradient-orange: var(--orange-primary);
+		--color-primary-gradient-orange-secondary: var(--orange-secondary);
+
+		// Button
+		--color-button-disabled: var(--gray-400);
+		--color-button-outline-border: var(--red-primary);
+		--color-button-outline-hover-background: var(--gray-300);
+		--color-button-nav-background: rgba(255, 255, 255, 0%);
+		--color-button-nav-hover-background: rgb(237, 242, 247, 40%);
+
+		// Input
+		--color-input-background: var(--gray-200);
+
+		// Table
+		--color-table-background: var(--gray-300);
+		--color-tableheader-background: var(--gray-200);
+		--color-tablerow-hover-background: var(--gray-200);
+		--color-tablecell-color: var(--black);
+
+		// Menu
+		--color-menu-background: var(--gray-50);
+		--color-border-nav-button: var(--gray-50);
+		--color-user-avatar-background: var(--gray-400);
+
+		// Login Form
+		--color-login-form-background: transparent;
+		--color-sign-in-card-background: var(--white);
+		--color-login-form-illustration-background: var(--white);
+
+		// Box Shadows
+		--box-shadow-auth-card: -1.1rem 1.1rem 3rem 0.8rem rgba(0, 0, 0, 4%);
+		--drop-shadow-000: var(--drop-shadow-none);
+		--drop-shadow-100: var(--drop-shadow-light-100);
+		--drop-shadow-200: var(--drop-shadow-light-200);
+		--drop-shadow-300: var(--drop-shadow-light-300);
+		--drop-shadow-400: var(--drop-shadow-light-400);
+		--drop-shadow-500: var(--drop-shadow-light-500);
+		--drop-shadow-600: var(--drop-shadow-light-600);
+
+		// Gradient
+		--gradient-auth-form: transparent;
+		--gradient-menu-background: linear-gradient(
+			to right,
+			rgba(74, 85, 104, 93%),
+			rgba(74, 85, 104, 90%)
+		);
+
+		// rgb(160, 174, 192, 85%)
+		// rgb(226, 232, 240, 95%)
+		--gradient-menu-separator: linear-gradient(
+			270deg,
+			rgba(0, 0, 0, 0%) 0%,
+			var(--gray-50) 30%,
+			var(--gray-50) 70%,
+			rgba(0, 0, 0, 0%) 100%
+		);
+
+		// Pagination
+		--color-login-form-hover-background: var(--gray-300);
+		--color-login-form-active-background: var(--gray-400);
+
+		// Apps
+		--color-app-card-background: var(--gray-200);
+		--color-app-card-hover-background: var(--gray-200);
+		--color-app-card-icon-background: var(--gray-100);
+
+		// Stats
+		--color-border-dotted-separator: var(--gray-400);
+	}
+}

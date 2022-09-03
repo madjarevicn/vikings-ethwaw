@@ -1,0 +1,172 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+import {
+	Icon,
+	IconColor,
+	IconSize,
+	IconType,
+	Label,
+	LabelCase,
+	LabelColor,
+	LabelSize,
+	LabelType,
+	LabelVariant,
+	LabelWeight,
+} from "core";
+import { LabelAlign } from "core";
+import { ButtonType, Input, InputType } from "core";
+
+<Meta title="Molecules/Input/CompoundInput" component={Input} />
+
+# Input
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl
+eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc
+euismod.
+
+## Props
+
+<Props story="." />
+
+## Examples
+
+export const InputTemplate = (args) => (
+	<Input placeholder={args.placeholder} name="username" type={InputType.TEXT}>
+		<Input.Label
+			type={args.labelType}
+			htmlFor="username"
+			color={args.labelColor}
+			weight={args.labelWeight}
+			variant={args.labelVariant}
+			size={args.labelSize}
+			letterCase={args.labelLetterCase}
+		>
+			{args.label}
+		</Input.Label>
+		<Input.Max />
+		<Input.Icon
+			size={args.iconSize}
+			color={args.iconColor}
+			type={args.iconType}
+		/>
+		{args.button}
+		<Input.Status align={LabelAlign.RIGHT} weight={LabelWeight.SLIM}>
+			{args.statusMessage}
+		</Input.Status>
+	</Input>
+);
+
+<Preview>
+	<Story
+		name="CompoundInput"
+		argTypes={{
+			label: {
+				type: { name: "string", required: true },
+				description: "Message that shows status of the input.",
+				table: {
+					type: { label: "string" },
+					defaultValue: { label: "Status Message" },
+				},
+				control: {
+					type: "text",
+				},
+			},
+			labelType: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(LabelType)],
+			},
+			labelColor: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(LabelColor)],
+			},
+			labelWeight: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(LabelWeight)],
+			},
+			labelVariant: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(LabelVariant)],
+			},
+			labelSize: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(LabelSize)],
+			},
+			labelLetterCase: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(LabelCase)],
+			},
+			iconSize: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(IconSize)],
+			},
+			iconColor: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(IconColor)],
+			},
+			iconType: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(IconType)],
+			},
+			statusMessage: {
+				type: { name: "string", required: true },
+				description: "Message that shows status of the input.",
+				table: {
+					type: { statusMessage: "string" },
+					defaultValue: { statusMessage: "Status Message" },
+				},
+				control: {
+					type: "text",
+				},
+			},
+			placeholder: {
+				type: { name: "string", required: true },
+				description: "Placeholder of the input.",
+				table: {
+					type: { placeholder: "string" },
+					defaultValue: { placeholder: "Placeholder" },
+				},
+				control: {
+					type: "text",
+				},
+			},
+			button: {
+				table: {
+					disable: true,
+				},
+			},
+		}}
+		args={{
+			label: "Label",
+			statusMessage: "Status Message",
+			placeholder: "Username",
+			labelType: LabelType.LABEL,
+			labelColor: LabelColor.GRADIENT,
+			labelWeight: LabelWeight.EXTRA_BOLD,
+			labelSize: LabelCase.UPPERCASE,
+			labelLetterCase: LabelCase.UPPERCASE,
+			iconSize: IconSize.LARGE,
+			iconColor: IconColor.GRADIENT,
+			iconType: IconType.COPY,
+			button: (
+				<Input.Button
+					onClick={action("submit")}
+					type={ButtonType.GRADIENT}
+					loading={false}
+				>
+					<Icon type={IconType.ARROW_RIGHT} />
+				</Input.Button>
+			),
+		}}
+	>
+		{InputTemplate.bind(Input)}
+	</Story>
+</Preview>

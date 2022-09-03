@@ -1,0 +1,57 @@
+{
+	"private": true,
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"apps/*"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.5%",
+			"last 10 versions",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"engines": {
+		"npm": "please-use-yarn",
+		"yarn": ">= 1.22.17",
+		"node": ">= 16.15.1"
+	},
+	"engineStrict": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev --no-cache --parallel --continue",
+		"lint": "turbo run lint",
+		"clean": "turbo run clean && rm -rf node_modules",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"changeset": "changeset",
+		"version-packages": "changeset version",
+		"release": "turbo run build --filter=docs^... && changeset publish",
+		"cli": "cd apps/cli && yarn run start",
+		"publish": "yarn run lint && yarn run build && changeset && changeset version && changeset tag && changeset publish && git push --follow-tags"
+	},
+	"devDependencies": {
+		"@acme/config": "*",
+		"@changesets/cli": "^2.24.1",
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"@gitmoji/commit-types": "^1.1.5",
+		"@types/babel__core": "^7.1.19",
+		"commitlint-config-gitmoji": "^2.2.5",
+		"commitlint-plugin-gitmoji": "^2.2.0",
+		"eslint": "^8.19.0",
+		"husky": "^8.0.1",
+		"pre-commit": "^1.2.2",
+		"prettier": "^2.7.1",
+		"stylelint": "^14.9.1",
+		"turbo": "latest"
+	},
+	"pre-commit": "lint"
+}

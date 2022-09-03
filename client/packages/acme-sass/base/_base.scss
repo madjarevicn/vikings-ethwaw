@@ -1,0 +1,45 @@
+@use "../foundation" as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+
+	padding: 0;
+
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+
+	font-size: $rem--default;
+
+	word-break: break-word;
+
+	@include respond($breakpoint--big-screen) {
+		font-size: $rem--big-screen;
+	}
+
+	@include respond($breakpoint--tab-land) {
+		font-size: $rem--tab-land;
+	}
+
+	@include respond($breakpoint--tab-port) {
+		font-size: $rem--tab-port;
+	}
+
+	@include respond($breakpoint--phone) {
+		font-size: $rem--phone;
+	}
+}
+
+body {
+	background-color: $color--window-background;
+}
+
+*:focus {
+	// TODO(Ilija): check this
+	// outline: none;
+	// box-shadow: $box-shadow--global-focus;
+}

@@ -1,0 +1,11 @@
+{
+	"name": "@acme/sass",
+	"version": "1.0.8",
+	"private": true,
+	"main": "index.js",
+	"files": [
+		"foundation.scss",
+		"global.scss",
+		"core-global.scss"
+	]
+}

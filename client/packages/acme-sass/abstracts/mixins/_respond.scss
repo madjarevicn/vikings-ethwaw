@@ -1,0 +1,41 @@
+@use "../variables/breakpoint" as *;
+
+/****
+
+	0px    -   600px     : Phone
+	600px  -   900px     : Tablet portrait
+	900px  -  1200px     : Tablet landscape
+	1200px -  1800px     : Default
+	1800px +             : Big screen
+
+	options:
+
+	phone / tab-port / tab-land / big-screen
+
+****/
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == $breakpoint--big-screen {
+		@media (min-width: $breakpoint--big-screen-mw) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == $breakpoint--tab-land {
+		@media (max-width: $breakpoint--tab-land-mw) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == $breakpoint--tab-port {
+		@media (max-width: $breakpoint--tab-port-mw) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == $breakpoint--phone {
+		@media (max-width: $breakpoint--phone-mw) {
+			@content;
+		}
+	}
+}

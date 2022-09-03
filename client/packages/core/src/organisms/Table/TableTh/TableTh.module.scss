@@ -1,0 +1,21 @@
+@import "@acme/sass/foundation";
+
+@for $i from 1 through 100 {
+	.ColumnWidth--#{$i} {
+		width: $i * 1%;
+	}
+}
+
+.TableTh {
+	$column-percentages: 100;
+	min-width: fit-content;
+	overflow: hidden;
+
+	text-align: start;
+
+	color: $color--tablecell-color;
+
+	padding: $s--4;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

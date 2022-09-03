@@ -1,0 +1,13 @@
+@import "@acme/sass/foundation";
+
+.TableTd {
+	overflow: hidden;
+
+	color: $color--tablecell-color;
+
+	padding: $s--4;
+
+	// max-width: 200px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

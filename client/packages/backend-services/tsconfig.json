@@ -1,0 +1,14 @@
+{
+	"extends": "@acme/tsconfig/react-library.json",
+	"include": ["."],
+	"exclude": ["dist", "build", "node_modules"],
+	"compilerOptions": {
+		// Problems with vite config from backoffice-client
+		// "baseUrl": ".",
+		// "paths": {
+		// 	"hooks/*": ["src/hooks/*"],
+		// 	"api/*": ["src/api/*"]
+		// 	// "src/*": ["src/*"]
+		// }
+	}
+}

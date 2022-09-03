@@ -1,0 +1,1 @@
+export { useGetSnaps } from "./useGetSnaps";

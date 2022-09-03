@@ -1,0 +1,37 @@
+@import "@acme/sass/foundation";
+
+.Balance {
+	display: flex;
+
+	flex-direction: column;
+
+	gap: $s--2;
+
+	&__Amount {
+		display: flex;
+
+		flex-direction: row;
+
+		align-items: center;
+
+		gap: $s--2;
+	}
+
+	&__Value {
+		display: flex;
+
+		flex-direction: row;
+
+		justify-content: baseline;
+
+		align-items: center;
+
+		gap: $s--2;
+
+		line-height: 1;
+	}
+
+	&__USD {
+		line-height: 1;
+	}
+}

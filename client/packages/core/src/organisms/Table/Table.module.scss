@@ -1,0 +1,22 @@
+@import "@acme/sass/foundation";
+
+.TableContainer {
+	width: 100%;
+	overflow: hidden;
+	box-shadow: $box-shadow--table;
+	border-radius: $border-radius--primary;
+}
+
+.TableWrapper {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: auto;
+
+	.Table {
+		width: 100%;
+		overflow-x: auto;
+
+		background-color: $color--window-background;
+		border-collapse: collapse;
+	}
+}

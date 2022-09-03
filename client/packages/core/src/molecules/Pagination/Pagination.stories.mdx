@@ -1,0 +1,60 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+
+import { Pagination } from "./Pagination";
+import {
+	PaginationColor,
+	PaginationSize,
+	PaginationType,
+} from "./Pagination.types";
+
+<Meta title="Molecules/Pagination" component={Pagination} />
+
+# Pagination
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl
+eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc
+euismod.
+
+## Props
+
+<Props story="." />
+
+## Examples
+
+export const PaginationTemplate = (args) => <Pagination {...args} />;
+
+<Preview>
+	<Story
+		name="Primary"
+		argTypes={{
+			type: {
+				control: {
+					type: "select",
+					options: [...Object.values(PaginationType)],
+				},
+				description: "Changes the type of the spinner icon.",
+			},
+			size: {
+				control: {
+					type: "select",
+					options: [...Object.values(PaginationSize)],
+				},
+				description: "Changes the size of the spinner icon.",
+			},
+			color: {
+				control: {
+					type: "select",
+					options: [...Object.values(PaginationColor)],
+				},
+				description: "Changes the color of the spinner icon.",
+			},
+		}}
+		args={{
+			type: PaginationType.LOADER2,
+			size: PaginationSize.LARGE,
+			color: PaginationColor.MAIN_TEXT_COLOR,
+		}}
+	>
+		{PaginationTemplate.bind({})}
+	</Story>
+</Preview>

@@ -1,0 +1,78 @@
+@import "@acme/sass/foundation";
+
+.LoginForm {
+	display: flex;
+
+	flex-direction: column;
+
+	gap: $s--6;
+
+	&__Form {
+		display: flex;
+
+		flex-direction: column;
+
+		gap: $s--6;
+	}
+
+	&__Header {
+		display: flex;
+
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: $s--2;
+
+		text-align: center;
+	}
+
+	&__LogosAndHeading {
+		display: flex;
+
+		flex-direction: column;
+		gap: $s--5;
+	}
+
+	&__Logos {
+		display: flex;
+
+		gap: $s--5;
+	}
+
+	&__MetamaskLogo {
+		width: 8rem;
+	}
+
+	&__VikingsLogo {
+		width: 8rem;
+		border-radius: $border-radius--rounded;
+	}
+
+	&__Inputs {
+		display: flex;
+
+		flex-direction: column;
+
+		gap: $s--6;
+	}
+
+	&__HiddenInput {
+		display: none;
+	}
+
+	&__Extra {
+		display: flex;
+
+		flex-direction: column;
+
+		gap: $s--3;
+	}
+
+	&__Status {
+		display: block;
+
+		&--Hidden {
+			visibility: hidden;
+		}
+	}
+}

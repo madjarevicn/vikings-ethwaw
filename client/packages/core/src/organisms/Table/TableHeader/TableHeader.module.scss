@@ -1,0 +1,15 @@
+@import "@acme/sass/foundation";
+
+.TableHeader {
+	width: 100%;
+
+	font-weight: $font-weight--default;
+
+	background-color: $color--tableheader-background;
+
+	&--Sticky {
+		position: sticky;
+		position: sticky;
+		top: 0;
+	}
+}

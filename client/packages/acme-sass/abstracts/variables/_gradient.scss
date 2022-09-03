@@ -1,0 +1,30 @@
+@use "./color" as *;
+
+$linear-gradient--primary: linear-gradient(
+	270deg,
+	$color--primary-gradient-orange 10%,
+	$color--primary-gradient-red 90%
+);
+$linear-gradient--primary-inverted: linear-gradient(
+	270deg,
+	$color--primary-gradient-red 10%,
+	$color--primary-gradient-orange 90%
+);
+$radial-gradient--primary: radial-gradient(
+	circle at 100%,
+	$color--primary-gradient-orange 20%,
+	$color--primary-gradient-red 80%
+);
+$radial-gradient--secondary: radial-gradient(
+	circle at 0%,
+	$color--primary-gradient-orange-secondary 10%,
+	$color--primary-gradient-red 90%
+);
+$radial-gradient--primary-center: radial-gradient(
+	circle at center,
+	$color--primary-gradient-orange 10%,
+	$color--primary-gradient-red 90%
+);
+$gradient--auth-form: var(--gradient-auth-form);
+$gradient--menu-background: var(--gradient-menu-background);
+$gradient--menu-separator: var(--gradient-menu-separator);

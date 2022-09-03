@@ -1,0 +1,15 @@
+@import "@acme/sass/foundation";
+
+.TableFooter {
+	display: flex;
+	width: 100%;
+
+	height: 5rem;
+
+	align-items: center;
+
+	color: $color--tablecell-color;
+	background-color: $color--tableheader-background;
+
+	padding: $s--4;
+}

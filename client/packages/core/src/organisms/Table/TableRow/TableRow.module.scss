@@ -1,0 +1,12 @@
+@import "@acme/sass/foundation";
+
+.TableRow {
+	transition: background-color 0.2s;
+
+	overflow: auto;
+	border-bottom: $border--tablerow-bottom;
+
+	&:hover {
+		background-color: $color--tableheader-hover-background;
+	}
+}

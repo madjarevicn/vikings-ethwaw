@@ -1,0 +1,9 @@
+@import "@acme/sass/foundation";
+
+.Breadcrumbs {
+	display: flex;
+
+	flex-wrap: wrap;
+	align-items: center;
+	gap: $s--2;
+}

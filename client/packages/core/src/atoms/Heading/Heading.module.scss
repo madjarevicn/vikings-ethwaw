@@ -1,0 +1,73 @@
+@import "@acme/sass/foundation";
+
+.Heading {
+	&--TwoLayered {
+		font-family: $font-family--heading;
+		font-weight: $font-weight--extra-bold;
+		text-transform: uppercase;
+
+		> *:first-child {
+			display: block;
+
+			font-size: $font-size--5;
+
+			letter-spacing: 1rem;
+
+			background-image: $linear-gradient--primary;
+
+			background-size: 100%;
+			background-repeat: repeat;
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		> *:last-child {
+			display: block;
+
+			font-size: $font-size--7;
+
+			font-family: $font-family--heading;
+			line-height: calc($font-size--7 - 12%);
+
+			color: $color--heading-two-layered-black;
+
+			margin-top: $s--3;
+
+			word-break: keep-all;
+
+			> * {
+				font-family: $font-family--heading;
+
+				background-image: $linear-gradient--primary;
+
+				margin-left: $s--2;
+
+				background-size: 100%;
+				background-repeat: repeat;
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	&--Section {
+		font-size: $font-size--6;
+		font-weight: $font-weight--extra-bold;
+		letter-spacing: -0.1rem;
+		text-transform: uppercase;
+
+		color: $color--heading-section;
+	}
+
+	&--Page {
+		font-size: $font-size--8;
+		font-weight: $font-weight--extra-bold;
+		line-height: calc($font-size--8 - 12%);
+		text-transform: uppercase;
+		text-align: center;
+
+		color: $color--heading-page;
+	}
+}

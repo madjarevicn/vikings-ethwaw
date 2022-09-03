@@ -1,0 +1,1 @@
+export { getTypeSpecificProps } from "./getTypeSpecificProps";
