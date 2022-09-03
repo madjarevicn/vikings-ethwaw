@@ -3,3 +3,4 @@ contracts/artifacts/
 contracts/node_modules/
 contracts/yarn.lock
 contracts/.env
+.DS_Store
