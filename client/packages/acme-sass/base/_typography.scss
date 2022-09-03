@@ -1,0 +1,8 @@
+@use "../foundation" as *;
+
+@use "../abstracts/variables/font-weight" as *;
+
+body {
+	font-family: $font-family--primary;
+	font-weight: $font-weight--slim;
+}

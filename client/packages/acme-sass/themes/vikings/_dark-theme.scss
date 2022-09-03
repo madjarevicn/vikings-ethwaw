@@ -1,0 +1,112 @@
+@use "./color-palette";
+@use "./box-shadow-palette";
+
+[data-theme] {
+	@extend .Theme--ColorPalette;
+	@extend .Theme--BoxShadowPalette;
+
+	&[data-theme="VIKINGS_DARK"] {
+		// App
+		--color-window-background: var(--gray-900);
+		--color-main-text-color: var(--white);
+		--color-white: var(--white);
+		--color-overlay: var(--black);
+		--color-skeleton: var(--gray-700);
+
+		// Heading
+		--color-heading-section: var(--white);
+		--color-heading-page: var(--orange-primary);
+		--color-heading-two-layered-black: var(--red-primary);
+		--color-heading-two-layered-white: var(--gray-400);
+
+		// Label
+		--color-label-primary: var(--red-primary);
+		--color-label-white: var(--gray-900);
+		--color-label-black: var(--white);
+		--color-label-disabled: var(--gray-400);
+
+		// Gradient
+		--color-primary-gradient-red: var(--red-primary);
+		--color-primary-gradient-orange: var(--orange-primary);
+		--color-primary-gradient-orange-secondary: var(--orange-secondary);
+
+		// Button
+		--color-button-disabled: var(--gray-400);
+		--color-button-outline-border: var(--red-primary);
+		--color-button-outline-hover-background: var(--gray-500);
+		--color-button-nav-background: var(--gray-900-90);
+		--color-button-nav-hover-background: linear-gradient(
+			270deg,
+			var(--color-primary-gradient-orange) 10%,
+			var(--color-primary-gradient-red) 90%
+		);
+
+		// Input
+		--color-input-background: var(--gray-700);
+
+		// Table
+		--color-table-background: var(--gray-900);
+		--color-tableheader-background: var(--gray-700);
+		--color-tablerow-hover-background: var(--gray-700);
+		--color-tablecell-color: var(--white);
+
+		// Menu
+		--color-menu-background: var(--gray-800);
+		--color-border-nav-button: var(--gray-700);
+		--color-user-avatar-background: var(--gray-600);
+
+		// Login Form
+		--color-login-form-background: var(--gray-900);
+		--color-sign-in-card-background: var(--gray-900);
+		--color-login-form-illustration-background: var(--gray-900);
+
+		// Box Shadows
+		--box-shadow-auth-card: -1.1rem 1.1rem 3rem 0.8rem rgba(0, 0, 0, 20%);
+		--drop-shadow-000: var(--drop-shadow-none);
+		--drop-shadow-100: var(--drop-shadow-dark-100);
+		--drop-shadow-200: var(--drop-shadow-dark-200);
+		--drop-shadow-300: var(--drop-shadow-dark-300);
+		--drop-shadow-400: var(--drop-shadow-dark-400);
+		--drop-shadow-500: var(--drop-shadow-dark-500);
+		--drop-shadow-600: var(--drop-shadow-dark-600);
+
+		// Gradient
+		--gradient-auth-form: radial-gradient(
+				ellipse at top,
+				rgb(255, 5, 72, 20%),
+				var(--gray-500),
+				rgb(255, 5, 72, 20%)
+			),
+			radial-gradient(
+				ellipse at right,
+				var(--orange-secondary),
+				rgb(113, 128, 150, 50%),
+				rgb(255, 98, 72, 20%)
+			),
+			var(--orange-primary);
+		--gradient-menu-background: linear-gradient(
+			to right,
+			var(--gray-800-98),
+			var(--gray-800-91)
+		);
+		--gradient-menu-separator: linear-gradient(
+			270deg,
+			rgba(0, 0, 0, 0%) 0%,
+			var(--gray-600) 30%,
+			var(--gray-600) 70%,
+			rgba(0, 0, 0, 0%) 100%
+		);
+
+		// Pagination
+		--color-login-form-hover-background: var(--gray-600);
+		--color-login-form-active-background: var(--gray-500);
+
+		// Apps
+		--color-app-card-background: var(--gray-800);
+		--color-app-card-hover-background: var(--gray-800);
+		--color-app-card-icon-background: var(--gray-700);
+
+		// Stats
+		--color-border-dotted-separator: var(--gray-600);
+	}
+}

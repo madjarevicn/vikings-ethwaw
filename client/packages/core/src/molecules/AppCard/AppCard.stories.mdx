@@ -1,0 +1,56 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+
+import { Spinner } from "./Spinner";
+import { SpinnerColor, SpinnerSize, SpinnerType } from "./Spinner.types";
+
+<Meta title="Molecules/Spinner" component={Spinner} />
+
+# Spinner
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl
+eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc
+euismod.
+
+## Props
+
+<Props story="." />
+
+## Examples
+
+export const SpinnerTemplate = (args) => <Spinner {...args} />;
+
+<Preview>
+	<Story
+		name="Primary"
+		argTypes={{
+			type: {
+				control: {
+					type: "select",
+					options: [...Object.values(SpinnerType)],
+				},
+				description: "Changes the type of the spinner icon.",
+			},
+			size: {
+				control: {
+					type: "select",
+					options: [...Object.values(SpinnerSize)],
+				},
+				description: "Changes the size of the spinner icon.",
+			},
+			color: {
+				control: {
+					type: "select",
+					options: [...Object.values(SpinnerColor)],
+				},
+				description: "Changes the color of the spinner icon.",
+			},
+		}}
+		args={{
+			type: SpinnerType.LOADER2,
+			size: SpinnerSize.LARGE,
+			color: SpinnerColor.MAIN_TEXT_COLOR,
+		}}
+	>
+		{SpinnerTemplate.bind({})}
+	</Story>
+</Preview>

@@ -1,0 +1,25 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+
+import { Balance } from "./Balance";
+
+<Meta title="Molecules/Balance" component={Balance} />
+
+# Balance
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl
+eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc
+euismod.
+
+## Props
+
+<Props story="." />
+
+## Examples
+
+export const BalanceTemplate = (args) => <Balance {...args} />;
+
+<Preview>
+	<Story name="Primary" argTypes={{}} args={{}}>
+		{BalanceTemplate.bind({})}
+	</Story>
+</Preview>

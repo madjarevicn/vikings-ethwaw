@@ -1,0 +1,74 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+import {
+	Icon,
+	IconColor,
+	IconSize,
+	IconType,
+	Label,
+	LabelCase,
+	LabelColor,
+	LabelSize,
+	LabelType,
+	LabelVariant,
+	LabelWeight,
+} from "core";
+import { LabelAlign } from "core";
+import { ButtonType, Input, InputType } from "core";
+
+<Meta title="Molecules/Input" component={Input} />
+
+# Input
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl
+eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc
+euismod.
+
+## Props
+
+<Props story="." />
+
+## Examples
+
+export const InputTemplate = (args) => <Input {...args} />;
+
+<Preview>
+	<Story
+		name="Primary"
+		argTypes={{
+			placeholder: {
+				type: { name: "string", required: true },
+				description: "Placeholder text in input",
+				table: {
+					type: { placeholder: "string" },
+					defaultValue: { placeholder: "Username" },
+				},
+				control: {
+					type: "text",
+				},
+			},
+			name: {
+				type: { name: "string", required: true },
+				description: "Placeholder text in input",
+				table: {
+					type: { name: "string" },
+					defaultValue: { name: "Username" },
+				},
+				control: {
+					type: "text",
+				},
+			},
+			type: {
+				type: "select",
+				description: "Changes background color of the component",
+				options: [...Object.values(InputType)],
+			},
+		}}
+		args={{
+			placeholder: "Username",
+			name: "username",
+			type: InputType.TEXT,
+		}}
+	>
+		{InputTemplate.bind({})}
+	</Story>
+</Preview>

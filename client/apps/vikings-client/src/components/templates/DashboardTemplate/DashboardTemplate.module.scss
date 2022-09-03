@@ -1,0 +1,62 @@
+@import "@acme/sass/foundation";
+
+.DashboardTemplate {
+	position: relative;
+
+	display: flex;
+	min-height: 100vh;
+
+	align-items: baseline;
+
+	background: var(--gradient-auth-form);
+
+	&--FullScreen {
+		align-items: stretch;
+
+		.DashboardTemplate__PageContent {
+			align-items: stretch;
+
+			padding: 0;
+
+			margin: 0;
+			border-radius: 0;
+		}
+	}
+
+	&__Menu {
+		flex-shrink: 0;
+	}
+
+	&__PageContent {
+		display: flex;
+		overflow-x: hidden;
+
+		flex-grow: 1;
+
+		flex-direction: column;
+		gap: $s--6;
+
+		background-color: $color--window-background;
+
+		padding: $s--8 $s--9;
+
+		margin: $s--8 $s--10;
+
+		border-radius: $border-radius--element;
+
+		box-shadow: $box-shadow--auth-card;
+
+		&--FullScreen {
+			align-items: stretch;
+
+			padding: 0;
+
+			margin: 0;
+			border-radius: 0;
+		}
+
+		@include respond($breakpoint--tab-port) {
+			margin: $s--9 $s--6;
+		}
+	}
+}

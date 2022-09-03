@@ -1,0 +1,86 @@
+{
+	"extends": [
+		"gitmoji"
+	],
+	"helpUrl": "https://gitmoji.dev/",
+	"rules": {
+		"header-max-length": [
+			2,
+			"always",
+			124
+		],
+		"scope-empty": [
+			2,
+			"always"
+		],
+		"subject-empty": [
+			2,
+			"never"
+		],
+		"subject-case": [
+			2,
+			"always",
+			"sentence-case"
+		],
+		"type-case": [
+			2,
+			"always",
+			"camel-case"
+		],
+		"type-enum": [
+			2,
+			"always",
+			[
+				"improveStructure",
+				"improvePerformance",
+				"remove",
+				"removeUnused",
+				"fix",
+				"fixWarnings",
+				"fixCi",
+				"fixTypos",
+				"fixSecurity",
+				"simpleHotfix",
+				"criticalHotfix",
+				"feature",
+				"documentation",
+				"deploy",
+				"style",
+				"responsive",
+				"launch",
+				"tests",
+				"release",
+				"dependency",
+				"ci",
+				"analytics",
+				"refactor",
+				"configuration",
+				"scripts",
+				"localization",
+				"revert",
+				"merge",
+				"packages",
+				"alien",
+				"assets",
+				"text",
+				"logs",
+				"contributor",
+				"architectural",
+				"infrastructure",
+				"mock",
+				"easterEgg",
+				"ignore",
+				"snapshots",
+				"experiment",
+				"seo",
+				"types",
+				"seed",
+				"animations",
+				"cleanUp",
+				"authorization",
+				"healthcheck",
+				"devEx"
+			]
+		]
+	}
+}

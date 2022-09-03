@@ -1,0 +1,19 @@
+// Global
+$box-shadow--global-focus: 0 0 0 1rem rgba(#fff, 0.4);
+$box-shadow--login-form: 0 0 5.5rem 0.4rem rgb(0, 0, 0, 4%);
+$box-shadow--table: 0 0 0.8rem 0.4rem rgb(0, 0, 0, 4%);
+
+// Auth Template
+$box-shadow--auth-card: var(--box-shadow-auth-card);
+
+// Drop Shadow
+$drop-shadow-000: var(--drop-shadow-000);
+$drop-shadow-100: var(--drop-shadow-100);
+$drop-shadow-200: var(--drop-shadow-200);
+$drop-shadow-300: var(--drop-shadow-300);
+$drop-shadow-400: var(--drop-shadow-400);
+$drop-shadow-500: var(--drop-shadow-500);
+$drop-shadow-600: var(--drop-shadow-600);
+
+// Apps
+$box-shadow--app-card-hover: 0 0 0.8rem 0.4rem rgb(0, 0, 0, 4%);

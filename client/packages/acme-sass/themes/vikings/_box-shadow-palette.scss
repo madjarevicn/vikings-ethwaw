@@ -1,0 +1,30 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable unit-allowed-list */
+
+.Theme--BoxShadowPalette {
+	--drop-shadow-none: drop-shadow(0 0 #0000);
+
+	// Light (https://tailwindcss.com/docs/drop-shadow)
+	--drop-shadow-light-100: drop-shadow(0 1px 1px rgb(0 0 0 / 5%));
+	--drop-shadow-light-200: drop-shadow(0 1px 2px rgb(0 0 0 / 10%))
+		drop-shadow(0 1px 1px rgb(0 0 0 / 6%));
+	--drop-shadow-light-300: drop-shadow(0 4px 3px rgb(0 0 0 / 7%))
+		drop-shadow(0 2px 2px rgb(0 0 0 / 6%));
+	--drop-shadow-light-400: drop-shadow(0 10px 8px rgb(0 0 0 / 4%))
+		drop-shadow(0 4px 3px rgb(0 0 0 / 10%));
+	--drop-shadow-light-500: drop-shadow(0 20px 13px rgb(0 0 0 / 3%))
+		drop-shadow(0 8px 5px rgb(0 0 0 / 8%));
+	--drop-shadow-light-600: drop-shadow(0 25px 25px rgb(0 0 0 / 15%));
+
+	// Dark (TODO)
+	--drop-shadow-dark-100: drop-shadow(0 1px 1px rgb(0 0 0 / 20%));
+	--drop-shadow-dark-200: drop-shadow(0 1px 2px rgb(0 0 0 / 25%))
+		drop-shadow(0 1px 1px rgb(0 0 0 / 21%));
+	--drop-shadow-dark-300: drop-shadow(0 4px 3px rgb(0 0 0 / 22%))
+		drop-shadow(0 2px 2px rgb(0 0 0 / 21%));
+	--drop-shadow-dark-400: drop-shadow(0 10px 8px rgb(0 0 0 / 19%))
+		drop-shadow(0 4px 3px rgb(0 0 0 / 25%));
+	--drop-shadow-dark-500: drop-shadow(0 20px 13px rgb(0 0 0 / 18%))
+		drop-shadow(0 8px 5px rgb(0 0 0 / 23%));
+	--drop-shadow-dark-600: drop-shadow(0 25px 25px rgb(0 0 0 / 30%));
+}

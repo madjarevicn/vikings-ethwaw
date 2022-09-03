@@ -1,0 +1,40 @@
+@mixin clearFix() {
+	&::after {
+		display: table;
+		clear: both;
+		content: "";
+	}
+}
+
+@mixin absoluteCenter() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin hideElement() {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+@mixin showElement() {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+@mixin rotate() {
+	@keyframes rotating {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(359deg);
+		}
+	}
+
+	animation: rotating 1.5s linear infinite;
+}

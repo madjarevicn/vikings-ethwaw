@@ -1,0 +1,15 @@
+{
+	"extends": "@acme/tsconfig/vite.json",
+	"compilerOptions": {
+		"baseUrl": "src",
+		"paths": {
+			"atoms": ["atoms"],
+			"molecules": ["molecules"],
+			"organisms": ["organisms"],
+			"types": ["types"]
+		},
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["**/*.ts", "**/*.tsx"],
+	"exclude": ["**/node_modules"]
+}

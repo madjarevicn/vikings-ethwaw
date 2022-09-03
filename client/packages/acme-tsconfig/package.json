@@ -1,0 +1,11 @@
+{
+	"name": "@acme/tsconfig",
+	"version": "1.0.8",
+	"private": true,
+	"main": "index.js",
+	"files": [
+		"base.json",
+		"node16.json",
+		"react-library.json"
+	]
+}

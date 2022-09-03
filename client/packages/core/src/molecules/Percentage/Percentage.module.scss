@@ -1,0 +1,17 @@
+@import "@acme/sass/foundation";
+
+.Percentage {
+	&__Content {
+		display: flex;
+
+		flex-direction: row;
+
+		gap: $s--3;
+	}
+
+	&__Value {
+	}
+
+	&__Char {
+	}
+}

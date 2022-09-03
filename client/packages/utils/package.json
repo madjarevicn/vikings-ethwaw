@@ -1,0 +1,31 @@
+{
+	"name": "utils",
+	"version": "1.0.11",
+	"license": "ISC",
+	"sideEffects": false,
+	"private": false,
+	"files": [
+		"dist"
+	],
+	"main": "src",
+	"scripts": {
+		"lint": "TIMING=1 eslint src/**/*.ts* --fix",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+		"reset:vite": "rimraf ./.cache ./dist"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@acme/sass": "*",
+		"@acme/tsconfig": "*",
+		"@types/react": "^18.0.15",
+		"@types/react-dom": "^18.0.6",
+		"@types/react-is": "^17.0.3",
+		"eslint": "^8.19.0",
+		"react": "^18.2.0",
+		"tsup": "^6.1.3",
+		"typescript": "^4.7.4",
+		"@tanstack/react-query": "^4.0.10",
+		"react-is": "^18.2.0",
+		"usehooks-ts": "^2.6.0"
+	}
+}

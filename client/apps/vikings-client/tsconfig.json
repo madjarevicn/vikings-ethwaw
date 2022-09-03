@@ -1,0 +1,12 @@
+{
+	"exclude": ["node_modules"],
+	"extends": "@acme/tsconfig/vite.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@src/*": ["src/*"]
+		},
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["**/*.ts", "**/*.tsx"]
+}

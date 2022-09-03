@@ -1,0 +1,147 @@
+@import "@acme/sass/foundation";
+
+.Label {
+	transition: color 0.2s ease;
+
+	font-size: $font-size--3;
+
+	&--Link,
+	&--Button {
+		display: inline;
+
+		background-color: transparent;
+
+		padding: 0;
+
+		margin: 0;
+		text-decoration: none;
+
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+
+	&--SizeExtraSmall {
+		font-size: $font-size--1;
+	}
+
+	&--SizeSmall {
+		font-size: $font-size--2;
+	}
+
+	&--SizeMedium {
+		font-size: $font-size--3;
+	}
+
+	&--SizeDefault {
+		font-size: $font-size--4;
+	}
+
+	&--SizeLarge {
+		font-size: $font-size--5;
+	}
+
+	&--SizeExtraLarge {
+		font-size: $font-size--6;
+	}
+
+	&--FontDefault {
+		font-family: $font-family--primary;
+	}
+
+	&--FontHeading {
+		font-family: $font-family--heading;
+	}
+
+	&--ColorPrimary {
+		color: $color--label-primary;
+	}
+
+	&--ColorMainTextColor {
+		color: $color--main-text-color;
+	}
+
+	&--ColorDisabled {
+		color: $color--label-disabled;
+	}
+
+	&--ColorGradient {
+		width: fit-content;
+
+		background-image: $linear-gradient--primary;
+		background-size: 100%;
+		background-repeat: repeat;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&--ColorWhite {
+		color: $color--white;
+	}
+
+	&--HoverPrimary {
+		&:visited {
+			color: none;
+		}
+
+		&:hover,
+		&:active {
+			transition: color 0.2s ease-in;
+
+			color: $color--label-primary;
+		}
+	}
+
+	&--WeightSlim {
+		font-weight: $font-weight--slim;
+	}
+
+	&--WeightDefault {
+		font-weight: $font-weight--default;
+	}
+
+	&--WeightBold {
+		font-weight: $font-weight--bold;
+	}
+
+	&--WeightExtraBold {
+		font-weight: $font-weight--extra-bold;
+	}
+
+	&--CaseLowercase {
+		text-transform: lowercase;
+	}
+
+	&--CaseUppercase {
+		text-transform: uppercase;
+	}
+
+	&--CaseCapitalized {
+		text-transform: capitalize;
+	}
+
+	&--CaseItalic {
+		font-style: italic;
+	}
+
+	&--CaseSpaced {
+		letter-spacing: 0.2rem;
+	}
+
+	&--CaseExtraSpaced {
+		letter-spacing: 1rem;
+	}
+
+	&--AlignLeft {
+		text-align: left;
+	}
+
+	&--AlignCenter {
+		text-align: center;
+	}
+
+	&--AlignRight {
+		text-align: right;
+	}
+}

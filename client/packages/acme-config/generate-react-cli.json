@@ -1,0 +1,57 @@
+{
+	"usesTypeScript": true,
+	"usesCssModule": true,
+	"cssPreprocessor": "scss",
+	"testLibrary": "None",
+	"component": {
+		"default": {
+			"path": "src/components",
+			"withStyle": true,
+			"withTest": false,
+			"withStory": false,
+			"withLazy": false
+		},
+		"atom": {
+			"path": "packages/core/src/atoms",
+			"customTemplates": {
+				"component": "../acme-templates/default/TemplateName.tsx",
+				"style": "../acme-templates/default/TemplateName.module.scss",
+				"index": "../acme-templates/default/index.ts",
+				"types": "../acme-templates/default/TemplateName.types.ts",
+				"storybook": "../acme-templates/atom/TemplateName.stories.mdx"
+			},
+			"withStyle": true,
+			"withIndex": true,
+			"withTypes": true,
+			"withStorybook": true
+		},
+		"molecule": {
+			"path": "packages/core/src/molecules",
+			"customTemplates": {
+				"component": "../acme-templates/default/TemplateName.tsx",
+				"style": "../acme-templates/default/TemplateName.module.scss",
+				"index": "../acme-templates/default/index.ts",
+				"types": "../acme-templates/default/TemplateName.types.ts",
+				"storybook": "../acme-templates/molecule/TemplateName.stories.mdx"
+			},
+			"withStyle": true,
+			"withIndex": true,
+			"withTypes": true,
+			"withStorybook": true
+		},
+		"organism": {
+			"path": "packages/core/src/organisms",
+			"customTemplates": {
+				"component": "../acme-templates/default/TemplateName.tsx",
+				"style": "../acme-templates/default/TemplateName.module.scss",
+				"index": "../acme-templates/default/index.ts",
+				"types": "../acme-templates/default/TemplateName.types.ts",
+				"storybook": "../acme-templates/organism/TemplateName.stories.mdx"
+			},
+			"withStyle": true,
+			"withIndex": true,
+			"withTypes": true,
+			"withStorybook": true
+		}
+	}
+}

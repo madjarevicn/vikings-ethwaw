@@ -1,0 +1,36 @@
+{
+	"name": "@acme/config",
+	"version": "1.0.8",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"generateComponent": "generate-react"
+	},
+	"devDependencies": {
+		"@fullstacksjs/eslint-config": "^8.4.3",
+		"@trivago/prettier-plugin-sort-imports": "^3.2.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.5",
+		"@typescript-eslint/parser": "^5.30.5",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-github": "^4.3.6",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-jsx-a11y": "^6.6.0",
+		"eslint-plugin-listeners": "^1.1.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.30.1",
+		"eslint-plugin-regexp": "^1.7.0",
+		"eslint-plugin-security": "^1.5.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"generate-react-cli": "^7.2.0",
+		"postcss": "^8.4.14",
+		"postcss-scss": "^4.0.4",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-recess-order": "^3.0.0",
+		"stylelint-config-standard": "^26.0.0",
+		"stylelint-config-standard-scss": "^4.0.0",
+		"stylelint-declaration-strict-value": "^1.8.0",
+		"stylelint-order": "^5.0.0",
+		"stylelint-scss": "^4.2.0",
+		"stylelint-selector-bem-pattern": "^2.1.1"
+	}
+}

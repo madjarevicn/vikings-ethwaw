@@ -1,0 +1,50 @@
+@import "@acme/sass/foundation";
+
+.AppCard {
+	// background-color: $color--app-card-background;
+	transition: all 0.3s;
+
+	display: inline-flex;
+
+	flex-direction: column;
+	justify-content: baseline;
+	align-items: center;
+	gap: $s--6;
+
+	text-align: center;
+
+	padding: $s--5;
+	text-decoration: none;
+	border-radius: $border-radius--huge;
+
+	&:hover {
+		transform: translateY(-3%);
+
+		background-color: $color--app-card-hover-background;
+		box-shadow: $box-shadow--app-card-hover;
+	}
+
+	&__IconContainer {
+		display: flex;
+		width: 9rem;
+		height: 9rem;
+
+		justify-content: center;
+		align-items: center;
+
+		background-color: $color--app-card-icon-background;
+
+		padding: $s--5;
+		border-radius: $border-radius--rounded;
+	}
+
+	&__Icon {
+		width: 4rem;
+		height: 4rem;
+		object-fit: contain;
+	}
+
+	&__Text {
+		white-space: nowrap;
+	}
+}

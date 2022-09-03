@@ -1,0 +1,61 @@
+@import "@acme/sass/foundation";
+
+.Stats {
+	display: flex;
+
+	flex-direction: column;
+
+	gap: $s--6;
+
+	&__Row {
+		display: flex;
+		width: 100%;
+
+		flex-direction: row;
+
+		justify-content: space-between;
+		align-items: flex-end;
+
+		gap: $s--4;
+
+		@include respond($breakpoint--phone) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__Left,
+	&__Right {
+		display: flex;
+		width: fit-content;
+
+		flex-direction: row;
+
+		justify-content: baseline;
+
+		align-items: center;
+
+		gap: $s--4;
+		white-space: nowrap;
+
+		@include respond($breakpoint--phone) {
+			justify-content: center;
+		}
+	}
+
+	&__Divider {
+		width: 100%;
+
+		margin-bottom: $s--1;
+
+		border: $border--dotted-separator;
+
+		@include respond($breakpoint--phone) {
+			display: none;
+		}
+	}
+
+	@include respond($breakpoint--phone) {
+		gap: $s--8;
+	}
+}

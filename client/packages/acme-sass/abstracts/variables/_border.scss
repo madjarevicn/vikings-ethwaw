@@ -1,0 +1,7 @@
+@use "./color" as *;
+
+$border--input-invalid: 0.2rem solid $color--label-primary;
+$border--input-valid: 0.2rem solid transparent;
+$border--tablerow-bottom: 0.01rem solid $color--tableheader-background;
+$border--nav-button: 0.1rem $color--border-nav-button solid;
+$border--dotted-separator: 0.1rem dashed $color--border-dotted-separator;

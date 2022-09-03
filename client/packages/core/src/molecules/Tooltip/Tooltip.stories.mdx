@@ -1,0 +1,46 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+
+import { Tooltip } from "./Tooltip";
+
+<Meta title="Molecules/Tooltip/Primary" component={Tooltip} />
+
+# Tooltip
+
+Tooltip is component for wrapping the Tooltip and adding additional
+functionality like copying to clipboard.
+
+## Props
+
+<Props of={Tooltip} />
+
+## Examples
+
+export const TooltipTemplate = (args) => <Tooltip {...args} />;
+
+export const argTypes = {
+	title: {
+		name: "title",
+		type: { name: "string", required: true },
+		defaultValue: "Tooltip Tip",
+	},
+	disabled: {
+		name: "disabled",
+		type: { name: "boolean", required: false },
+		defaultValue: false,
+	},
+	copy: {
+		name: "copy",
+		type: { name: "boolean", required: false },
+		defaultValue: true,
+	},
+	children: {
+		name: "children",
+		defaultValue: <span>Tooltip</span>,
+	},
+};
+
+<Preview>
+	<Story name="Primary" argTypes={argTypes}>
+		{TooltipTemplate.bind({})}
+	</Story>
+</Preview>

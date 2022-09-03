@@ -1,0 +1,42 @@
+@import "@acme/sass/foundation";
+
+.Pagination {
+	display: inline-flex;
+
+	flex-basis: max-content;
+
+	justify-content: center;
+	align-items: stretch;
+	gap: 0.5rem;
+
+	&__Dots {
+		display: flex;
+
+		align-items: flex-end;
+		user-select: none;
+	}
+
+	&__Label {
+		display: flex;
+
+		align-items: center;
+	}
+
+	&__Button {
+		padding: $s--3 $s--4;
+
+		&:hover {
+			background-color: $color--pagination-button-hover;
+		}
+
+		&--Disabled {
+			&:hover {
+				background-color: transparent;
+			}
+		}
+
+		&--Active {
+			background-color: $color--pagination-button-active;
+		}
+	}
+}

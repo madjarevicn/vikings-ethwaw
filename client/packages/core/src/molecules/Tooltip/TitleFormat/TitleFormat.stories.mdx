@@ -1,0 +1,37 @@
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs/blocks";
+
+import { TitleFormat } from "./TitleFormat";
+
+<Meta title="Molecules/Tooltip/TitleFormat" component={TitleFormat} />
+
+# TitleFormat
+
+TitleFormat is component for contained inside the Tooltip component and is used
+for formatting the tooltip.
+
+## Props
+
+<Props of={TitleFormat} />
+
+## Examples
+
+export const TitleFormatTemplate = (args) => <TitleFormat {...args} />;
+
+export const argTypes = {
+	title: {
+		name: "title",
+		type: { name: "string", required: true },
+		defaultValue: "Tooltip Tip",
+	},
+	copy: {
+		name: "copy",
+		type: { name: "boolean", required: false },
+		defaultValue: false,
+	},
+};
+
+<Preview>
+	<Story name="TitleFormat" argTypes={argTypes}>
+		{TitleFormatTemplate.bind({})}
+	</Story>
+</Preview>

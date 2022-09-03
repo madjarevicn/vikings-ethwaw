@@ -1,0 +1,38 @@
+{
+	"name": "core",
+	"version": "1.0.11",
+	"license": "ISC",
+	"sideEffects": false,
+	"private": false,
+	"files": [
+		"dist"
+	],
+	"main": "src",
+	"scripts": {
+		"lint": "TIMING=1 eslint src/**/*.ts* --fix",
+		"clean": "rm -rf .turbo && rm -rf node_modules",
+		"reset:vite": "rimraf ./.cache ./dist"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@acme/sass": "*",
+		"@acme/tsconfig": "*",
+		"utils": "*",
+		"@storybook/addon-docs": "^6.5.9",
+		"@types/react": "^18.0.15",
+		"@types/react-copy-to-clipboard": "^5.0.3",
+		"@types/react-dom": "^18.0.6",
+		"@types/react-is": "^17.0.3",
+		"classnames": "^2.3.1",
+		"eslint": "^8.19.0",
+		"framer-motion": "^6.4.3",
+		"react": "^18.2.0",
+		"react-copy-to-clipboard": "^5.1.0",
+		"react-is": "^18.2.0",
+		"react-router-dom": "^6.3.0",
+		"react-tippy": "^1.4.0",
+		"sass": "^1.53.0",
+		"typescript": "^4.7.4",
+		"usehooks-ts": "^2.6.0"
+	}
+}
