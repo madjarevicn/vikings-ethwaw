@@ -1,5 +1,4 @@
 const { readJson, computeFunctionData, storeSelectors, decodeArguments} = require('./utils.js');
-const {ethers} = require("hardhat");
 
 const main = () => {
     const methods = readJson(`methods.json`);

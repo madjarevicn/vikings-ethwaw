@@ -1,9 +1,9 @@
 {
   "ERC20" : [
-    "transfer(address,uint256)",
-    "allowance(address,address)",
-    "approve(address,uint256)",
-    "transferFrom(address,address,uint256)"
+    "transfer(address to,uint256 amount)",
+    "allowance(address owner,address spender)",
+    "approve(address spender,uint256 amount)",
+    "transferFrom(address from,address to,uint256 amount)"
   ],
   "AMM" : [
     "addLiquidity(address tokenA,address tokenB,uint amountADesired,uint amountBDesired,uint amountAMin,uint amountBMin,address to,uint deadline)",
