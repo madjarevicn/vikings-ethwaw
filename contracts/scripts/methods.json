@@ -1,0 +1,21 @@
+{
+  "ERC20" : [
+    "transfer(address,uint256)",
+    "allowance(address,address)",
+    "approve(address,uint256)",
+    "transferFrom(address,address,uint256)"
+  ],
+  "AMM" : [
+    "addLiquidity(address tokenA,address tokenB,uint amountADesired,uint amountBDesired,uint amountAMin,uint amountBMin,address to,uint deadline)",
+    "addLiquidityETH(address token,uint amountTokenDesired,uint amountTokenMin,uint amountETHMin,address to,uint deadline)",
+    "removeLiquidity(address tokenA,address tokenB,uint liquidity,uint amountAMin,uint amountBMin,address to,uint deadline)",
+    "removeLiquidityETH(address token,uint liquidity,uint amountTokenMin,uint amountETHMin,address to,uint deadline)",
+    "swapExactTokensForTokens(uint amountIn,uint amountOutMin,address[] calldata path,address to,uint deadline)",
+    "swapTokensForExactTokens(uint amountOut,uint amountInMax,address[] calldata path,address to,uint deadline)",
+    "swapExactETHForTokens(uint amountOutMin,address[] calldata path,address to,uint deadline)",
+    "swapTokensForExactETH(uint amountOut,uint amountInMax,address[] calldata path,address to,uint deadline)",
+    "swapExactTokensForETH(uint amountIn,uint amountOutMin,address[] calldata path,address to,uint deadline)",
+    "swapETHForExactTokens(uint amountOut,address[] calldata path,address to,uint deadline)",
+    "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint amountIn,uint amountOutMin,address[] calldata path,address to,uint deadline)"
+  ]
+}

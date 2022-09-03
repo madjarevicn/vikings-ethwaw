@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({path:__dirname+'/.env'});
 require('@nomiclabs/hardhat-waffle');
 require('@nomiclabs/hardhat-ethers');
 require('@nomiclabs/hardhat-web3');

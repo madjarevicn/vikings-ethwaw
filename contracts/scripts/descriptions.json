@@ -1,0 +1,13 @@
+{
+  "addLiquidity": "Adds liquidity to an ERC-20⇄ERC-20 pool.",
+  "addLiquidityETH": "Adds liquidity to an ERC-20⇄WETH pool with ETH.",
+  "removeLiquidity": "Removes liquidity from an ERC-20⇄ERC-20 pool.",
+  "removeLiquidityETH": "Removes liquidity from an ERC-20⇄WETH pool and receive ETH.",
+  "swapExactTokensForTokens": "Swaps an exact amount of input tokens for as many output tokens as possible, along the route determined by the path. The first element of path is the input token, the last is the output token, and any intermediate elements represent intermediate pairs to trade through (if, for example, a direct pair does not exist).",
+  "swapTokensForExactTokens": "Receive an exact amount of output tokens for as few input tokens as possible, along the route determined by the path. The first element of path is the input token, the last is the output token, and any intermediate elements represent intermediate tokens to trade through (if, for example, a direct pair does not exist).",
+  "swapExactETHForTokens": "Swaps an exact amount of ETH for as many output tokens as possible, along the route determined by the path. The first element of path must be WETH, the last is the output token, and any intermediate elements represent intermediate pairs to trade through (if, for example, a direct pair does not exist).",
+  "swapTokensForExactETH": "Receive an exact amount of ETH for as few input tokens as possible, along the route determined by the path. The first element of path is the input token, the last must be WETH, and any intermediate elements represent intermediate pairs to trade through (if, for example, a direct pair does not exist).",
+  "swapExactTokensForETH": "Swaps an exact amount of tokens for as much ETH as possible, along the route determined by the path. The first element of path is the input token, the last must be WETH, and any intermediate elements represent intermediate pairs to trade through (if, for example, a direct pair does not exist).",
+  "swapETHForExactTokens": "Receive an exact amount of tokens for as little ETH as possible, along the route determined by the path. The first element of path must be WETH, the last is the output token and any intermediate elements represent intermediate pairs to trade through (if, for example, a direct pair does not exist).",
+  "swapExactTokensForTokensSupportingFeeOnTransferTokens": "Identical to swapExactTokensForTokens, but succeeds for tokens that take a fee on transfer."
+}
