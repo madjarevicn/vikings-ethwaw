@@ -15,6 +15,7 @@ const readJson = (fileName) => {
 
 const storeSelectors = (topic, funcSelector, funcName, types, typeNames) => {
     const selectors = readJson(`selectors.json`);
+    selectors[funcSelector] = selectors[funcSelector] || {};
     selectors[funcSelector]["name"] = funcName;
     selectors[funcSelector]["topic"] = topic;
     selectors[funcSelector]["types"] = types;
@@ -30,11 +31,10 @@ const computeFunctionData = (funcInterface) => {
     const args = funcTypesCut.split(',');
     let types = [];
     let typeNames = [];
-    for (const arg in args) {
-        arg.split(" ");
-        types.push(arg[0] === "uint" ? "uint256" : arg);
-        typeNames.push(arg[1] === "memory" || args[1] === "calldata" ? arg[2] : arg[1]);
-        //console.log(arg);
+    for (let i = 0; i < args.length; i++) {
+        const a = args[i].split(" ");
+        types.push(a[0] === "uint" ? "uint256" : a[0]);
+        typeNames.push(a[1] === "memory" || a[1] === "calldata" ? a[2] : a[1]);
     }
     return [funcSelector, funcName, types, typeNames];
 }

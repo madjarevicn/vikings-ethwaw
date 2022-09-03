@@ -1,294 +1,260 @@
 {
-    "0xa9059cbb": [
-        "transfer",
-        "ERC20",
-        [
+    "0xa9059cbb": {
+        "name": "transfer",
+        "topic": "ERC20",
+        "types": [
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            null,
+            null
         ]
-    ],
-    "0xdd62ed3e": [
-        "allowance",
-        "ERC20",
-        [
+    },
+    "0xdd62ed3e": {
+        "name": "allowance",
+        "topic": "ERC20",
+        "types": [
             "address",
             "address"
+        ],
+        "typeNames": [
+            null,
+            null
         ]
-    ],
-    "0x095ea7b3": [
-        "approve",
-        "ERC20",
-        [
+    },
+    "0x095ea7b3": {
+        "name": "approve",
+        "topic": "ERC20",
+        "types": [
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            null,
+            null
         ]
-    ],
-    "0x23b872dd": [
-        "transferFrom",
-        "ERC20",
-        [
+    },
+    "0x23b872dd": {
+        "name": "transferFrom",
+        "topic": "ERC20",
+        "types": [
             "address",
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            null,
+            null,
+            null
         ]
-    ],
-    "0xe8e33700": [
-        "addLiquidity",
-        "AMM",
-        [
+    },
+    "0x0afe67b2": {
+        "name": "addLiquidity",
+        "topic": "AMM",
+        "types": [
             "address",
             "address",
             "uint256",
-            "uint256",
-            "uint256",
-            "uint256",
-            "address",
-            "uint256"
-        ]
-    ],
-    "0xf305d719": [
-        "addLiquidityETH",
-        "AMM",
-        [
-            "address",
-            "uint256",
-            "uint256",
-            "uint256",
-            "address",
-            "uint256"
-        ]
-    ],
-    "0xbaa2abde": [
-        "removeLiquidity",
-        "AMM",
-        [
-            "address",
-            "address",
             "uint256",
             "uint256",
             "uint256",
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            "tokenA",
+            "tokenB",
+            "amountADesired",
+            "amountBDesired",
+            "amountAMin",
+            "amountBMin",
+            "to",
+            "deadline"
         ]
-    ],
-    "0x02751cec": [
-        "removeLiquidityETH",
-        "AMM",
-        [
+    },
+    "0xaa4272d2": {
+        "name": "addLiquidityETH",
+        "topic": "AMM",
+        "types": [
             "address",
             "uint256",
             "uint256",
             "uint256",
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            "token",
+            "amountTokenDesired",
+            "amountTokenMin",
+            "amountETHMin",
+            "to",
+            "deadline"
         ]
-    ],
-    "0x38ed1739": [
-        "swapExactTokensForTokens",
-        "AMM",
-        [
+    },
+    "0x30ab65d5": {
+        "name": "removeLiquidity",
+        "topic": "AMM",
+        "types": [
+            "address",
+            "address",
             "uint256",
             "uint256",
-            "address[]",
+            "uint256",
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            "tokenA",
+            "tokenB",
+            "liquidity",
+            "amountAMin",
+            "amountBMin",
+            "to",
+            "deadline"
         ]
-    ],
-    "0x8803dbee": [
-        "swapTokensForExactTokens",
-        "AMM",
-        [
+    },
+    "0x340f6bbd": {
+        "name": "removeLiquidityETH",
+        "topic": "AMM",
+        "types": [
+            "address",
+            "uint256",
+            "uint256",
+            "uint256",
+            "address",
+            "uint256"
+        ],
+        "typeNames": [
+            "token",
+            "liquidity",
+            "amountTokenMin",
+            "amountETHMin",
+            "to",
+            "deadline"
+        ]
+    },
+    "0x4336d5e8": {
+        "name": "swapExactTokensForTokens",
+        "topic": "AMM",
+        "types": [
             "uint256",
             "uint256",
             "address[]",
             "address",
             "uint256"
         ],
-        [
+        "typeNames": [
+            "amountIn",
+            "amountOutMin",
+            "path",
+            "to",
+            "deadline"
+        ]
+    },
+    "0x12e967ae": {
+        "name": "swapTokensForExactTokens",
+        "topic": "AMM",
+        "types": [
+            "uint256",
+            "uint256",
+            "address[]",
+            "address",
+            "uint256"
+        ],
+        "typeNames": [
             "amountOut",
             "amountInMax",
             "path",
             "to",
             "deadline"
         ]
-    ],
-    "0x7ff36ab5": [
-        "swapExactETHForTokens",
-        "AMM",
-        [
+    },
+    "0xa91c044d": {
+        "name": "swapExactETHForTokens",
+        "topic": "AMM",
+        "types": [
             "uint256",
             "address[]",
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            "amountOutMin",
+            "path",
+            "to",
+            "deadline"
         ]
-    ],
-    "0x4a25d94a": [
-        "swapTokensForExactETH",
-        "AMM",
-        [
-            "uint256",
-            "uint256",
-            "address[]",
-            "address",
-            "uint256"
-        ]
-    ],
-    "0x18cbafe5": [
-        "swapExactTokensForETH",
-        "AMM",
-        [
+    },
+    "0x75bb087f": {
+        "name": "swapTokensForExactETH",
+        "topic": "AMM",
+        "types": [
             "uint256",
             "uint256",
             "address[]",
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            "amountOut",
+            "amountInMax",
+            "path",
+            "to",
+            "deadline"
         ]
-    ],
-    "0xfb3bdb41": [
-        "swapETHForExactTokens",
-        "AMM",
-        [
-            "uint256",
-            "address[]",
-            "address",
-            "uint256"
-        ]
-    ],
-    "0x5c11d795": [
-        "swapExactTokensForTokensSupportingFeeOnTransferTokens",
-        "AMM",
-        [
+    },
+    "0xb86f1cbd": {
+        "name": "swapExactTokensForETH",
+        "topic": "AMM",
+        "types": [
             "uint256",
             "uint256",
             "address[]",
             "address",
             "uint256"
+        ],
+        "typeNames": [
+            "amountIn",
+            "amountOutMin",
+            "path",
+            "to",
+            "deadline"
         ]
-    ],
-    "0x0afe67b2": [
-        "addLiquidity",
-        "AMM",
-        [
-            "address tokenA",
-            "address tokenB",
-            "uint amountADesired",
-            "uint amountBDesired",
-            "uint amountAMin",
-            "uint amountBMin",
-            "address to",
-            "uint deadline"
+    },
+    "0x6fdef044": {
+        "name": "swapETHForExactTokens",
+        "topic": "AMM",
+        "types": [
+            "uint256",
+            "address[]",
+            "address",
+            "uint256"
+        ],
+        "typeNames": [
+            "amountOut",
+            "path",
+            "to",
+            "deadline"
         ]
-    ],
-    "0xaa4272d2": [
-        "addLiquidityETH",
-        "AMM",
-        [
-            "address token",
-            "uint amountTokenDesired",
-            "uint amountTokenMin",
-            "uint amountETHMin",
-            "address to",
-            "uint deadline"
+    },
+    "0x7b7ac79f": {
+        "name": "swapExactTokensForTokensSupportingFeeOnTransferTokens",
+        "topic": "AMM",
+        "types": [
+            "uint256",
+            "uint256",
+            "address[]",
+            "address",
+            "uint256"
+        ],
+        "typeNames": [
+            "amountIn",
+            "amountOutMin",
+            "path",
+            "to",
+            "deadline"
         ]
-    ],
-    "0x30ab65d5": [
-        "removeLiquidity",
-        "AMM",
-        [
-            "address tokenA",
-            "address tokenB",
-            "uint liquidity",
-            "uint amountAMin",
-            "uint amountBMin",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0x340f6bbd": [
-        "removeLiquidityETH",
-        "AMM",
-        [
-            "address token",
-            "uint liquidity",
-            "uint amountTokenMin",
-            "uint amountETHMin",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0x4336d5e8": [
-        "swapExactTokensForTokens",
-        "AMM",
-        [
-            "uint amountIn",
-            "uint amountOutMin",
-            "address[] calldata path",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0x12e967ae": [
-        "swapTokensForExactTokens",
-        "AMM",
-        [
-            "uint amountOut",
-            "uint amountInMax",
-            "address[] calldata path",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0xa91c044d": [
-        "swapExactETHForTokens",
-        "AMM",
-        [
-            "uint amountOutMin",
-            "address[] calldata path",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0x75bb087f": [
-        "swapTokensForExactETH",
-        "AMM",
-        [
-            "uint amountOut",
-            "uint amountInMax",
-            "address[] calldata path",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0xb86f1cbd": [
-        "swapExactTokensForETH",
-        "AMM",
-        [
-            "uint amountIn",
-            "uint amountOutMin",
-            "address[] calldata path",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0x6fdef044": [
-        "swapETHForExactTokens",
-        "AMM",
-        [
-            "uint amountOut",
-            "address[] calldata path",
-            "address to",
-            "uint deadline"
-        ]
-    ],
-    "0x7b7ac79f": [
-        "swapExactTokensForTokensSupportingFeeOnTransferTokens",
-        "AMM",
-        [
-            "uint amountIn",
-            "uint amountOutMin",
-            "address[] calldata path",
-            "address to",
-            "uint deadline"
-        ]
-    ]
+    }
 }
