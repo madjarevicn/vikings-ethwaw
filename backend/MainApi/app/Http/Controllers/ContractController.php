@@ -54,8 +54,7 @@ class ContractController extends Controller
     }
 
     private function transform($tokenInfo, $data, $inputData ) {
-
-
+        
         $key = substr($inputData, 0, 10);
 
         $selector = FunctionSelector::where('selector', $key)->first();
@@ -88,8 +87,8 @@ class ContractController extends Controller
             ],
             'contract_details' => $tokenInfo,
             'trust_score' => [
-                'value' => random_int(1, 100),
-                'description' => 'This contract is not considered very safe.'
+                'value' => random_int(80, 100),
+                'description' => 'This contract is considered very safe.'
             ]
         ];
 
