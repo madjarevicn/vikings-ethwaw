@@ -42,9 +42,10 @@ const MainForm: React.FC<IMainFormProps> = ({ className = "" }) => {
 
 			resetForm();
 
-			if (m?.data?.contract_details && m?.data?.trust_score) {
+			if (m?.data?.contract_details && m?.data?.trust_score && m?.data?.tx_overview) {
 				const contractDetails = m.data.contract_details;
 				const trustScore = m.data.trust_score;
+                const txOverview = m.data.tx_overview;
 				const response = await ethereum.request({
 					method: "wallet_invokeSnap",
 					params: [
@@ -53,6 +54,7 @@ const MainForm: React.FC<IMainFormProps> = ({ className = "" }) => {
 							method: "hello",
 							...(contractDetails && contractDetails),
 							...(trustScore && trustScore),
+                            ...(txOverview && txOverview)
 						},
 					],
 				});

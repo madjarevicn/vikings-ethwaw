@@ -39,6 +39,15 @@ export const onRpcRequest: OnRpcRequestHandler = async ({
             prompt: `Viking Details!`,
             description: 'Description',
             textAreaContent: `
+TX Overview:
+
+Protocol name: ${request.protocol_name}
+Action: ${request.action}
+Action description: ${request.action_description}
+Topic: ${request.topic}
+Input params: ${JSON.stringify(request.input_params)}
+Input values: ${JSON.stringify(request.input_values)}
+
 Contract Details:
 
 Balance in USD: ${request.balance_usd}

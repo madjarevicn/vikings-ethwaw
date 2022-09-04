@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "1.0.8",
 	"scripts": {
-		"dev": "DEBUG=vite:plugin:mkcert HTTPS=true vite --host",
+		"dev": "vite --host",
 		"dev:http": "yarn run reset:vite && vite",
 		"dev:firebase-emulator": "yarn run build && firebase emulators:start",
 		"build": "yarn run reset:vite && vite build",

@@ -24,10 +24,6 @@ export default defineConfig({
 
 		svgr(),
 
-		mkcert({
-			source: "coding",
-		}),
-
 		viteImagemin({
 			mozjpeg: {
 				progressive: true,
